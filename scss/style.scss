@@ -5,7 +5,7 @@
 	width: 100%;
 	height: 100vh;
 	position: relative;
-	background: cadetblue;
+	background: #000;
 	overflow: hidden;
 
 	.bg li {
@@ -24,10 +24,16 @@
 			opacity: 1;
 		}
 		&:nth-of-type(1) {
-			background-color: violet;
+			background-image: url(../img/j12.jpg);
 		}
 		&:nth-of-type(2) {
-			background-color: wheat;
+			width: 60%;
+			//height: 75vh;
+			//top: 15vh;
+			left: auto;
+			right: 6vw;
+			background-image: url(../img/watch4.jpg);
+			background-color: #000;
 		}
 		&:nth-of-type(3) {
 			background-color: yellowgreen;
@@ -42,22 +48,174 @@
 		height: 100%;
 
 		.swiper-slide {
-			width: 60vw;
-			height: 60vh;
+			width: 70vw;
+			height: 70vh;
 			position: relative;
-			top: 20vh;
+			top: 15vh;
+
+			&.slide1 {
+				.box {
+					display: flex;
+					article {
+						padding-bottom: 1vh;
+						border-bottom: 1px solid #eee;
+						h1 {
+							font: 13px/1 arial;
+							color: #ddd;
+							padding: 2vh 0 1.5vh;
+							border-bottom: 1px solid #eee;
+						}
+						h2 {
+							font: bold 14px/1 arial;
+							color: #aaa;
+							padding: 2vh 0 1vh;
+						}
+						span {
+							display: block;
+							font: bold 13px/1 arial;
+							color: #777;
+							padding-top: 2vh;
+						}
+						p {
+							font: 13px/1.4 arial;
+							color: #888;
+						}
+						&:nth-of-type(1) {
+							flex: 50%;
+							margin-right: 3vw;
+							> h2 {
+								font: bold 5vw arial;
+								color: #eee;
+								padding-top: 13vh;
+								margin-bottom: 1vh;
+							}
+							> p {
+								font: 15px/1.8 arial;
+								color: #ccc;
+							}
+						}
+						&:nth-of-type(2) {
+							flex: 25%;
+							margin-right: 3vw;
+							> p {
+								margin-bottom: 2vh;
+							}
+						}
+						&:nth-of-type(3) {
+							flex: 25%;
+							> P {
+								padding-bottom: 2vh;
+								border-bottom: 1px solid #888;
+							}
+							ul {
+								display: block;
+								margin-top: 1vh;
+								li {
+									font: 12px/1 arial;
+									color: #aaa;
+									padding-bottom: 1vh;
+									margin-bottom: 2vh;
+									border-bottom: 1px solid #888;
+								}
+							}
+						}
+					}
+				}
+
+				ul {
+					display: flex;
+					padding-top: 10px;
+
+					li {
+						width: 100%;
+						a {
+							font: 11px/1 arial;
+							color: #999;
+						}
+						&:nth-of-type(1) {
+							flex: 50%;
+							margin-right: 3vw;
+						}
+						&:nth-of-type(2) {
+							flex: 25%;
+							margin-right: 3vw;
+						}
+						&:nth-of-type(3) {
+							flex: 25%;
+							a {
+								margin-right: 5px;
+							}
+						}
+					}
+				}
+			}
+
+			&.slide2 {
+				.box2 {
+					padding-top: 3vh;
+					display: flex;
+					margin-bottom: 20px;
+
+					.pic {
+						width: 50%;
+						height: auto;
+						background: url(../img/watch3.jpg) no-repeat
+							center/cover;
+					}
+					.text {
+						width: 50%;
+						padding-left: 2vw;
+						div {
+							h2 {
+								font: 20px/1 arial;
+								color: #eee;
+								margin-bottom: 1vh;
+							}
+							p {
+								font: 14px/1.4 arial;
+								color: #ccc;
+								margin-bottom: 0.5vh;
+							}
+							a {
+								float: right;
+								text-decoration: none;
+								display: block;
+								width: 70px;
+								height: 25px;
+								font: 12px/25px arial;
+								color: #eee;
+								border: 1px solid #eee;
+								text-align: center;
+								margin-top: 3vh;
+							}
+							&.txt1 {
+								margin-bottom: 2.5vh;
+							}
+							&.txt2 {
+								margin-bottom: 2.5vh;
+							}
+						}
+					}
+				}
+			}
 
 			.inner {
 				width: 100%;
 				height: 100%;
 				border: 1px solid #fff;
-				background: rgba(255, 255, 255, 0.5);
-				padding: 60px;
-				font: bold 50px/1 arial;
-				color: #999;
-				backdrop-filter: blur(10px);
+				background: rgba(0, 0, 0, 0.8);
+				padding: 2.5vw;
+				backdrop-filter: blur(2px);
 				opacity: 0.5;
 				transition: opacity 1s; //opacity 효과만
+				overflow: hidden;
+
+				h1 {
+					font: bold 30px/1 arial;
+					color: #fff;
+					padding-bottom: 2.5vh;
+					border-bottom: 1px solid #fff;
+				}
 			}
 
 			&.swiper-slide-active .inner {
@@ -90,8 +248,8 @@
 		//작업자 툴에서 고치고 싶은 구문을 찾아 수정
 		position: absolute;
 		left: auto; //설정값이 left:0으로 지정되어 있었음
-		right: 10vw;
-		top: 10vh;
+		right: 15vw;
+		top: 8vh;
 		width: auto; //100%로 지정되어 있었음
 		height: 50px;
 
@@ -102,6 +260,8 @@
 			border-radius: 0px;
 			margin-left: 60px;
 			opacity: 0.7;
+			font: 12px/1 arial;
+			color: #fff;
 
 			&.swiper-pagination-bullet-active {
 				//활성화된 페이지네이션 클래스명

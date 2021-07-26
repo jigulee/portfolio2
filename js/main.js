@@ -1,5 +1,5 @@
-const menu = ["Company", "About", "Information", "News"];
-//메뉴에 넣고 싶은 값을 배열로 설정
+const menu = ["THE J12", "THE EXPERTISE", "THE DETAILS", "THE MUSES"];
+//메뉴에 넣을 값 배열에 담기
 
 //스와이퍼 동작하는 기능
 const swiper = new Swiper("#wrap", { //2번째 인수값을 객체로 전달
@@ -25,7 +25,7 @@ const swiper = new Swiper("#wrap", { //2번째 인수값을 객체로 전달
             //패널의 갯수만큼 index값 카운터됨 (반복되는 구조)
             //${menu[index]} menu라는 배열의 index번째 요소를 불러오기
         }
-    },
+    }
     /*
     effect: "coverflow",
     coverflowEffect: { //coverflow 전용 옵션값
@@ -65,14 +65,14 @@ for (let el of navi) { //반복도는 el에 클릭이벤트 연결
     })
 };
 
-//이벤트 발생시 activation 함수만 호출
+//이벤트 발생시 activation 함수만 호출 , 해당 순번의 bg변경하기
 function activation() {
     let item = document.querySelector(".swiper-slide-active"); //활성화된 패널
     let i = item.getAttribute("data-swiper-slide-index"); //순서값 클래스명
 
-    //모든 bg만큼 반복을 돌면서 클래스 "on" 없애기
+    //모든 bg의 반복을 돌면서 클래스 "on" 없애기
     for (let el of bgs) {
         el.classList.remove("on");
     }
-    bgs[i].classList.add("on"); //순번에 해당하는 bg에만 "on"  배경 바꾸기
+    bgs[i].classList.add("on"); //해당하는 순번의 bg에 "on"
 };
