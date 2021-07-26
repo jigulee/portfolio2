@@ -8,6 +8,35 @@
 	background: cadetblue;
 	overflow: hidden;
 
+	.bg li {
+		width: 100%;
+		height: 100%;
+		position: absolute; //겹쳐놓기
+		top: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		opacity: 0;
+		transition: 1s;
+
+		&.on {
+			opacity: 1;
+		}
+		&:nth-of-type(1) {
+			background-color: violet;
+		}
+		&:nth-of-type(2) {
+			background-color: wheat;
+		}
+		&:nth-of-type(3) {
+			background-color: yellowgreen;
+		}
+		&:nth-of-type(4) {
+			background-color: skyblue;
+		}
+	}
+
 	.swiper-wrapper {
 		width: 100%;
 		height: 100%;
@@ -26,6 +55,14 @@
 				padding: 60px;
 				font: bold 50px/1 arial;
 				color: #999;
+				backdrop-filter: blur(10px);
+				opacity: 0.5;
+				transition: opacity 1s; //opacity 효과만
+			}
+
+			&.swiper-slide-active .inner {
+				//활성화된 스와이퍼 클래스명 .swiper-slide-active
+				opacity: 1;
 			}
 		}
 	}
@@ -52,15 +89,15 @@
 	.swiper-pagination {
 		//작업자 툴에서 고치고 싶은 구문을 찾아 수정
 		position: absolute;
-		left: auto;
+		left: auto; //설정값이 left:0으로 지정되어 있었음
 		right: 10vw;
 		top: 10vh;
-		width: auto;
+		width: auto; //100%로 지정되어 있었음
 		height: 50px;
 
 		span {
-			width: auto;
-			height: auto;
+			width: auto; //설정값 초기화
+			height: auto; //설정값 초기화
 			background: transparent; //투명
 			border-radius: 0px;
 			margin-left: 60px;
