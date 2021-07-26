@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "reset";
+
+#wrap {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: #000;
+	overflow: hidden;
+
+	.swiper-wrapper {
+		width: 100%;
+		height: 100%;
+
+		.swiper-slide {
+			width: 100%;
+			height: 60vh;
+			position: relative;
+			top: 20vh;
+
+			.inner {
+				width: 100%;
+				height: 100%;
+				border: 1px solid #fff;
+				background: rgba(255, 255, 255, 0.5);
+				padding: 60px;
+				font: bold 50px/1 arial;
+				color: #999;
+			}
+		}
+	}
+}
