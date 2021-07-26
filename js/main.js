@@ -1,3 +1,5 @@
+const menu = ["Company", "About", "Information", "News"];
+
 const swiper = new Swiper("#wrap", { //2번째 인수값을 객체로 전달
     loop: true, //순환
     slidesPerView: "auto", //지정한 넓이값 적용
@@ -13,7 +15,10 @@ const swiper = new Swiper("#wrap", { //2번째 인수값을 객체로 전달
     pagination: { //원하는 페이지 이동 버튼 
         el: ".swiper-pagination",
         type: 'bullets',
-        clickable: true //클릭한 버튼 위치로 넘어가기
+        clickable: true, //클릭한 버튼 위치로 넘어가기
+        renderBullet: function (index, className) {
+            return `<span class="${className}">${menu[index]}</span>`
+        }
     },
 
     /*

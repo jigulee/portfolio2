@@ -29,4 +29,27 @@
 			}
 		}
 	}
+
+	.swiper-pagination {
+		//작업자 툴에서 고치고 싶은 구문을 찾아 수정
+		position: absolute;
+		left: auto;
+		right: 10vw;
+		top: 10vh;
+		width: auto;
+
+		span {
+			width: auto;
+			height: auto;
+			background: transparent; //투명
+			border-radius: 0px;
+			margin-left: 60px;
+			opacity: 0.7;
+
+			&.swiper-pagination-bullet-active {
+				//활성화된 페이지네이션 클래스명
+				opacity: 1;
+			}
+		}
+	}
 }

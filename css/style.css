@@ -32,5 +32,20 @@ a {
         padding: 60px;
         font: bold 50px/1 arial;
         color: #999; }
+  #wrap .swiper-pagination {
+    position: absolute;
+    left: auto;
+    right: 10vw;
+    top: 10vh;
+    width: auto; }
+    #wrap .swiper-pagination span {
+      width: auto;
+      height: auto;
+      background: transparent;
+      border-radius: 0px;
+      margin-left: 60px;
+      opacity: 0.7; }
+      #wrap .swiper-pagination span.swiper-pagination-bullet-active {
+        opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
