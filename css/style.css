@@ -93,7 +93,8 @@ a {
             flex: 50%;
             margin-right: 3vw; }
             #wrap .swiper-wrapper .swiper-slide.slide1 .box article:nth-of-type(1) > h2 {
-              font: bold 100px/1 "Roboto";
+              font: 100px/1 "Roboto";
+              font-weight: 250;
               color: #fafafa;
               letter-spacing: -10px;
               padding-top: 200px;
