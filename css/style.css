@@ -92,6 +92,12 @@ a {
           #wrap .swiper-wrapper .swiper-slide.slide1 .box article:nth-of-type(1) {
             flex: 50%;
             margin-right: 3vw; }
+            #wrap .swiper-wrapper .swiper-slide.slide1 .box article:nth-of-type(1) > h2 {
+              font: bold 100px/1 "Roboto";
+              color: #fafafa;
+              letter-spacing: -10px;
+              padding-top: 200px;
+              margin-bottom: 20px; }
             #wrap .swiper-wrapper .swiper-slide.slide1 .box article:nth-of-type(1) > img {
               width: 210px;
               padding-top: 200px;
