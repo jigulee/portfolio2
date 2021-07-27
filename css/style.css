@@ -73,7 +73,7 @@ a {
           border-bottom: 1px solid #eee; }
           #wrap .swiper-wrapper .swiper-slide.slide1 .box article h1 {
             font: 13px/1 arial;
-            color: #fff;
+            color: #efefef;
             padding: 2vh 0 1.5vh;
             border-bottom: 1px solid #eee; }
           #wrap .swiper-wrapper .swiper-slide.slide1 .box article h2 {
@@ -151,14 +151,14 @@ a {
           width: 50%;
           padding-left: 30px; }
           #wrap .swiper-wrapper .swiper-slide.slide2 .box2 .text div h2 {
-            font: bold 20px/1 "Roboto";
+            font: bold 18px/1 "Roboto";
             letter-spacing: 1px;
             color: #eee;
             border-bottom: 1px solid #aaa;
             padding-bottom: 10px;
             margin-bottom: 5px; }
           #wrap .swiper-wrapper .swiper-slide.slide2 .box2 .text div p {
-            font: 15px/1.4 arial;
+            font: 15px/1.5 arial;
             color: #ccc;
             margin-bottom: 0.5vh; }
           #wrap .swiper-wrapper .swiper-slide.slide2 .box2 .text div a {
@@ -173,9 +173,9 @@ a {
             margin-top: 15px;
             margin-left: 465px; }
           #wrap .swiper-wrapper .swiper-slide.slide2 .box2 .text div.txt1 {
-            margin-bottom: 25px; }
+            margin-bottom: 35px; }
           #wrap .swiper-wrapper .swiper-slide.slide2 .box2 .text div.txt2 {
-            margin-bottom: 25px; }
+            margin-bottom: 35px; }
       #wrap .swiper-wrapper .swiper-slide.slide3 .wrap {
         display: flex;
         flex-wrap: wrap;
@@ -183,7 +183,7 @@ a {
         #wrap .swiper-wrapper .swiper-slide.slide3 .wrap article {
           width: 32%;
           height: 500px;
-          background: rgba(255, 255, 255, 0.6);
+          background: rgba(255, 255, 255, 0.55);
           margin-top: 30px;
           margin-right: 2%;
           padding: 20px;
@@ -239,13 +239,13 @@ a {
             width: 100%;
             padding: 10px; }
             #wrap .swiper-wrapper .swiper-slide.slide4 .muse article .txt h1 {
-              font: 18px/1 "Roboto";
+              font: 20px/1 "Roboto";
               letter-spacing: 1px;
               margin-bottom: 10px;
               color: #fff; }
             #wrap .swiper-wrapper .swiper-slide.slide4 .muse article .txt p {
-              font: 12px/1.6 arial;
-              color: #bbb; }
+              font: bold 12px/1.6 "Roboto";
+              color: #999; }
           #wrap .swiper-wrapper .swiper-slide.slide4 .muse article:nth-of-type(1) .pic {
             background: url(../img/people4.jpg) no-repeat center/cover; }
           #wrap .swiper-wrapper .swiper-slide.slide4 .muse article:nth-of-type(2) .pic {
@@ -272,8 +272,8 @@ a {
         overflow: hidden; }
         #wrap .swiper-wrapper .swiper-slide .inner > h1 {
           font: bold 30px/1 arial;
-          letter-spacing: 2px;
-          color: #fff;
+          letter-spacing: 1px;
+          color: #fafafa;
           padding-bottom: 2.5vh;
           border-bottom: 1px solid #fff; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
@@ -296,7 +296,7 @@ a {
   #wrap .swiper-pagination {
     position: absolute;
     left: auto;
-    right: 15vw;
+    right: 5vw;
     top: 8vh;
     width: auto;
     height: 50px; }
@@ -306,8 +306,9 @@ a {
       background: transparent;
       border-radius: 0px;
       margin-left: 60px;
-      opacity: 0.7;
-      font: 12px/1 arial;
+      opacity: 0.4;
+      font: bold 12px/1 "Roboto";
+      letter-spacing: 1px;
       color: #fff; }
       #wrap .swiper-pagination span.swiper-pagination-bullet-active {
         opacity: 1; }
