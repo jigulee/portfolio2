@@ -17,6 +17,11 @@ a {
   position: relative;
   background: #000;
   overflow: hidden; }
+  #wrap > h1 {
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+    color: #fff; }
   #wrap .bg li {
     width: 100%;
     height: 100%;
@@ -63,9 +68,9 @@ a {
     height: 100%; }
     #wrap .swiper-wrapper .swiper-slide {
       width: 1180px;
-      height: 650px;
+      height: 630px;
       position: relative;
-      top: 15vh; }
+      top: 13vh; }
       #wrap .swiper-wrapper .swiper-slide.slide1 .box {
         display: flex; }
         #wrap .swiper-wrapper .swiper-slide.slide1 .box article {
@@ -272,7 +277,7 @@ a {
         height: 100%;
         border: 1px solid #fff;
         background: rgba(0, 0, 0, 0.68);
-        padding: 30px;
+        padding: 25px;
         backdrop-filter: blur(1px);
         opacity: 0.5;
         transition: opacity 1s;
@@ -281,7 +286,7 @@ a {
           font: bold 30px/1 arial;
           letter-spacing: 1px;
           color: #fafafa;
-          padding-bottom: 2.5vh;
+          padding-bottom: 10px;
           border-bottom: 1px solid #fff; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
@@ -304,7 +309,7 @@ a {
     position: absolute;
     left: auto;
     right: 5vw;
-    top: 8vh;
+    top: 5vh;
     width: auto;
     height: 50px; }
     #wrap .swiper-pagination span {

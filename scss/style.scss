@@ -9,6 +9,13 @@
 	background: #000;
 	overflow: hidden;
 
+	> h1 {
+		position: absolute;
+		left: 5vw;
+		top: 5vh;
+		color: #fff;
+	}
+
 	.bg li {
 		width: 100%;
 		height: 100%;
@@ -66,10 +73,10 @@
 
 		.swiper-slide {
 			width: 1180px;
-			height: 650px;
+			height: 630px;
 			//height: 70vh;
 			position: relative;
-			top: 15vh;
+			top: 13vh;
 
 			&.slide1 {
 				.box {
@@ -103,7 +110,6 @@
 							flex: 50%;
 							margin-right: 3vw;
 							> h2 {
-								//@at-root: 210px;
 								font: 100px/1 "Roboto";
 								font-weight: 250;
 								color: #fafafa;
@@ -372,7 +378,7 @@
 				height: 100%;
 				border: 1px solid #fff;
 				background: rgba(0, 0, 0, 0.68);
-				padding: 30px;
+				padding: 25px;
 				backdrop-filter: blur(1px);
 				opacity: 0.5;
 				transition: opacity 1s; //opacity 효과만
@@ -382,7 +388,7 @@
 					font: bold 30px/1 arial;
 					letter-spacing: 1px;
 					color: #fafafa;
-					padding-bottom: 2.5vh;
+					padding-bottom: 10px;
 					border-bottom: 1px solid #fff;
 				}
 			}
@@ -418,7 +424,7 @@
 		position: absolute;
 		left: auto; //설정값이 left:0으로 지정되어 있었음
 		right: 5vw;
-		top: 8vh;
+		top: 5vh;
 		width: auto; //100%로 지정되어 있었음
 		height: 50px;
 
