@@ -11,7 +11,7 @@ const swiper = new Swiper("#wrap", { //2번째 인수값을 객체로 전달
 
     navigation: { //페이지 넘기는 버튼
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-bytton-prev"
+        prevEl: ".swiper-button-prev"
     },
 
     pagination: { //원하는 페이지 이동 버튼 
