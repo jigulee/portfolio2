@@ -187,10 +187,6 @@ a {
             padding-bottom: 10px;
             margin-bottom: 5px;
             cursor: pointer; }
-            #wrap .swiper-wrapper .swiper-slide.slide2 .box2 .text div h2:hover a {
-              background: #fafafa;
-              color: #111;
-              border: 1px solid #fafafa; }
           #wrap .swiper-wrapper .swiper-slide.slide2 .box2 .text div p {
             font: 14px/1.4 arial;
             color: #ccc;
@@ -223,7 +219,7 @@ a {
           background: rgba(255, 255, 255, 0.55);
           margin-top: 30px;
           margin-right: 30px;
-          padding: 20px 15px;
+          padding: 15px;
           box-sizing: border-box;
           cursor: pointer; }
           #wrap .swiper-wrapper .swiper-slide.slide3 .wrap article .pic {
@@ -287,10 +283,12 @@ a {
       #wrap .swiper-wrapper .swiper-slide.slide4 .muse {
         display: flex; }
         #wrap .swiper-wrapper .swiper-slide.slide4 .muse article {
-          width: calc(100% / 4);
+          flex: 1;
           margin-top: 30px;
           margin-right: 70px;
-          position: relative; }
+          position: relative;
+          transition: flex 0.5s;
+          cursor: pointer; }
           #wrap .swiper-wrapper .swiper-slide.slide4 .muse article::after {
             content: "";
             display: block;
@@ -330,6 +328,8 @@ a {
               margin-top: 87px; }
             #wrap .swiper-wrapper .swiper-slide.slide4 .muse article:nth-of-type(4)::after {
               display: none; }
+          #wrap .swiper-wrapper .swiper-slide.slide4 .muse article:hover {
+            flex: 1.5; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
   #wrap .swiper-button-next {
