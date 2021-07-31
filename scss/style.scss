@@ -16,6 +16,7 @@
 		font-size: 25px;
 		letter-spacing: 1px;
 		color: #fff;
+		z-index: 3;
 	}
 
 	.bg li {
@@ -98,7 +99,6 @@
 					color: #fafafa;
 					padding-bottom: 10px;
 					border-bottom: 1px solid #fff;
-					z-index: 3;
 				}
 			}
 
@@ -314,6 +314,7 @@
 								letter-spacing: 1px;
 								color: rgba(255, 255, 255, 0.8);
 								margin-bottom: 10px;
+								transition: 0.5s;
 							}
 							p {
 								font: 14px/1.4 arial;
@@ -364,8 +365,14 @@
 							.pic::after {
 								opacity: 1;
 							}
+							h1 {
+								color: #fff;
+							}
 							a::after {
 								opacity: 1;
+							}
+							a {
+								color: #ccc;
 							}
 						}
 					}
@@ -407,10 +414,12 @@
 								letter-spacing: 1px;
 								margin-bottom: 8px;
 								color: #fff;
+								transition: 0.5s;
 							}
 							p {
 								font: bold 12px/1.5 "Roboto";
 								color: #999;
+								transition: 0.5s;
 							}
 						}
 						&:nth-of-type(1) {
@@ -444,7 +453,18 @@
 							}
 						}
 						&:hover {
-							flex: 1.5;
+							flex: 1.3;
+							.txt {
+								h1 {
+									font-size: 20px;
+									letter-spacing: 2px;
+								}
+								p {
+									//font-size: 13px;
+									color: #bbb;
+									letter-spacing: 1px;
+								}
+							}
 						}
 					}
 				}
@@ -459,24 +479,22 @@
 
 	.swiper-button-next {
 		top: auto;
-		bottom: 50%;
-		right: 10vw;
+		bottom: 5vh;
+		right: 3vw;
 		transform: translateY(-50%);
-		transform: scale(0.8); //크기 줄이기
-		filter: saturate(0%) brightness(300%);
-		opacity: 0;
+		transform: scale(0.6); //크기 줄이기
+		filter: saturate(0%) brightness(200%);
+		opacity: 1;
 	}
 
 	.swiper-button-prev {
 		top: auto;
-		bottom: 50%;
+		bottom: 5vh;
 		left: auto;
-		left: 10vw;
-		transform: translateY(-50%);
-		//left: calc(5vw + 50px); //next 버튼 왼쪽 옆에 위치
-		transform: scale(0.8); //크기 줄이기
-		filter: saturate(0%) brightness(300%);
-		opacity: 0;
+		right: calc(3vw + 50px); //next 버튼 왼쪽 옆에 위치
+		transform: scale(0.6); //크기 줄이기
+		filter: saturate(0%) brightness(200%);
+		opacity: 1;
 	}
 
 	.swiper-pagination {
